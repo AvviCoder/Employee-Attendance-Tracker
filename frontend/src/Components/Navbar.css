@@ -1,0 +1,40 @@
+/* Navbar.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Ensure the navbar is always on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo img {
+    width: 70px; /* Adjust as needed */
+    margin-right: 100px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 70px;
+  }
+  
+  .navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffdd57; /* Yellow color on hover */
+  }
+  

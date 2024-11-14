@@ -1,0 +1,68 @@
+/* Homepage.css */
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../assets/CoverPage.avif'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.homepage-container h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top:80px;
+    z-index: 999;
+}
+
+.homepage-container p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.homepage-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    bottom: 100px;
+    position: absolute;
+    z-index: 999;
+}
+
+.homepage-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homepage-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .homepage-container p {
+        font-size: 1rem;
+    }
+
+    .homepage-container button {
+        font-size: 1rem;
+    }
+}
